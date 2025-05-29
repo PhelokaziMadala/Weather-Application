@@ -4,11 +4,15 @@ I’ve always been fascinated by how weather affects our daily lives. This proje
 This weather application is designed to deliver accurate and user-friendly weather updates for any location. Built with a focus on functionality and responsiveness, it offers the following intermediate features:
 
 📅 5-Day or Hourly Forecast: Get a quick glance at upcoming weather conditions, including temperature, wind, and precipitation, for the next five days or by the hour.
-📱 Responsive Design: The app is fully mobile-friendly and adapts seamlessly across various screen sizes using responsive CSS or frameworks like Bootstrap.
+
+📱 Responsive Design: The app is fully mobile-friendly and adapts seamlessly across various screen sizes using responsive CSS.
+
 📍 Geolocation Support: Automatically detects and displays weather data based on the user’s current location using browser-based geolocation.
+
 🌡️ Temperature Unit Toggle: Users can switch between Celsius and Fahrenheit to view temperature in their preferred unit.
 
 🔧 Technologies Used
+
 HTML5 – Structure of the app
 
 CSS3 – Styling and responsive design
