@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-cloud-sun"></i> Weather App</h1>
+            <div class="controls">
+                <button id="getLocationBtn" class="btn-location">
+                    <i class="fas fa-location-arrow"></i> Get My Location
+                </button>
+                <div class="unit-toggle">
+                    <button id="celsiusBtn" class="unit-btn active">°C</button>
+                    <button id="fahrenheitBtn" class="unit-btn">°F</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="search-section">
+            <div class="search-container">
+                <input type="text" id="cityInput" placeholder="Enter city name...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <div class="forecast-tabs">
+            <button id="currentTab" class="tab-btn active">Current</button>
+            <button id="hourlyTab" class="tab-btn">Hourly</button>
+            <button id="dailyTab" class="tab-btn">5-Day</button>
+        </div>
+
+        <div class="loading" id="loading">
+            <i class="fas fa-spinner fa-spin"></i> Loading weather data...
+        </div>
+
+        <div class="error-message" id="errorMessage"></div>
+
+        <div id="currentWeather" class="weather-section active">
+            <div class="current-weather-card">
+                <div class="current-info">
+                    <div class="location">
+                        <h2 id="currentLocation">Select a location</h2>
+                        <p id="currentDate"></p>
+                    </div>
+                    <div class="temperature">
+                        <span id="currentTemp">--°</span>
+                        <img id="currentIcon" src="" alt="Weather icon">
+                    </div>
+                </div>
+                <div class="current-details">
+                    <div class="detail-item">
+                        <i class="fas fa-eye"></i>
+                        <span>Visibility</span>
+                        <span id="visibility">-- km</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-tint"></i>
+                        <span>Humidity</span>
+                        <span id="humidity">--%</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-wind"></i>
+                        <span>Wind</span>
+                        <span id="windSpeed">-- km/h</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-thermometer-half"></i>
+                        <span>Feels like</span>
+                        <span id="feelsLike">--°</span>
+                    </div>
+                </div>
+                <div class="weather-description">
+                    <p id="weatherDescription">--</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="hourlyWeather" class="weather-section">
+            <div class="hourly-forecast" id="hourlyForecast">
+                <!-- Hourly forecast items will be inserted here -->
+            </div>
+        </div>
+
+        <div id="dailyWeather" class="weather-section">
+            <div class="daily-forecast" id="dailyForecast">
+                <!-- 5-day forecast items will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
