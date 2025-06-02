@@ -458,3 +458,13 @@ body {
         padding: 25px;
     }
 }
+.calculator-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
